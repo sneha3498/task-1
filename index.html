@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Student Registration Form</h2>
+    <form id="studentForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label>Gender:</label>
+      <label><input type="radio" name="gender" value="Male"> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+
+      <label>Interests:</label>
+      <label><input type="checkbox" name="interests" value="Sports"> Sports</label>
+      <label><input type="checkbox" name="interests" value="Music"> Music</label>
+      <label><input type="checkbox" name="interests" value="Coding"> Coding</label>
+
+      <label for="department">Department:</label>
+      <select id="department" name="department">
+        <option value="">Select</option>
+        <option value="CSE">Computer Science</option>
+        <option value="ECE">Electronics</option>
+        <option value="ME">Mechanical</option>
+      </select>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4"></textarea>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
